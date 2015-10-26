@@ -1,0 +1,37 @@
+{
+  "name": "tiny-filter-async",
+  "version": "1.0.0",
+  "description": "Async filter function, similar to async.filter",
+  "main": "index.js",
+  "keywords": [
+    "filter",
+    "async",
+    "asynchronous",
+    "iteration",
+    "iterate",
+    "loop",
+    "foreach",
+    "parallel",
+    "concurrent",
+    "array",
+    "flow",
+    "control flow"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "alessioalex-standard": "^1.0.0",
+    "async": "^1.4.2",
+    "filter-async": "^1.0.0",
+    "husky": "^0.10.1",
+    "matcha": "^0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bench": "matcha bench.js",
+    "lint": "alessioalex-standard",
+    "precommit": "npm run lint"
+  },
+  "author": "Alexandru Vladutu <alexandru.vladutu@gmail.com>",
+  "license": "MIT",
+  "repository": "alessioalex/tiny-filter-async"
+}
