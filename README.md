@@ -2,6 +2,8 @@
 
 Async filter function, similar to (and inspired by) [async.filter](https://github.com/caolan/async#filter).
 
+[![build status](https://secure.travis-ci.org/alessioalex/tiny-filter-async.png)](http://travis-ci.org/alessioalex/tiny-filter-async)
+
 ## Usage
 
 ### filter(array, iterator, callback)
