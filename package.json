@@ -1,6 +1,6 @@
 {
   "name": "tiny-filter-async",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Async filter function, similar to async.filter",
   "main": "index.js",
   "keywords": [
