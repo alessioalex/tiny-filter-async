@@ -1,5 +1,7 @@
 'use strict';
 
+var immediate = (typeof setImmediate !== 'function') ? setTimeout : setImmediate;
+
 function filter(array, iterator, callback) {
   var filteredData = [];
   var counter = array.length;
@@ -11,9 +13,11 @@ function filter(array, iterator, callback) {
       }
 
       if (!--counter) {
-        callback(filteredData.sort().map(function createResults(idx) {
-          return array[idx];
-        }));
+        immediate(function asyncify() {
+          callback(filteredData.sort().map(function createResults(idx) {
+            return array[idx];
+          }));
+        }, 0);
       }
     });
   });

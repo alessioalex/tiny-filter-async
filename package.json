@@ -23,13 +23,14 @@
     "async": "^1.4.2",
     "filter-async": "^1.0.0",
     "husky": "^0.10.1",
-    "matcha": "^0.6.0"
+    "matcha": "^0.6.0",
+    "tape": "^4.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tape test.js",
     "bench": "matcha bench.js",
     "lint": "alessioalex-standard",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint && npm test"
   },
   "author": "Alexandru Vladutu <alexandru.vladutu@gmail.com>",
   "license": "MIT",
