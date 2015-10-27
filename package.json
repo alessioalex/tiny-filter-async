@@ -24,6 +24,7 @@
     "filter-async": "^1.0.0",
     "husky": "^0.10.1",
     "matcha": "^0.6.0",
+    "sinon": "^1.17.2",
     "tape": "^4.2.2"
   },
   "scripts": {
